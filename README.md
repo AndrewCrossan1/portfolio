@@ -1,24 +1,6 @@
-# portfolio
+# Andy's Portfolio
 
-## Project setup
-```
-npm install
-```
+The goal of this project is to demonstrate not only my ability in Vue.js for frontend development, but also my backend work using Python's Django Framework
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technology
+The Vue.js frontend will consume a rest api featuring personal projects i have created and also a blog for general discussion and for my projects.
