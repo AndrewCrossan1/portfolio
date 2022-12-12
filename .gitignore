@@ -21,12 +21,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-
-# OS generated files
-.browserslistrc
-.eslintrc.js
-babel.config.js
-jsconfig.json
-package-lock.json
-package.json
-vue.config.js
