@@ -1,0 +1,41 @@
+:root {
+    --graphite-gray: #53565b;
+    --cornflower-blue: #6495ED;
+    --white: #fff;
+}
+
+/* Button colors */
+.btn-cornflower-blue {
+    background-color: --cornflower-blue;
+    color: --white;
+}
+.btn-outline-cornflower-blue {
+    background-color: transparent;
+    color: --cornflower-blue;
+    border: 1px solid --cornflower-blue;
+}
+
+/* Background colors */
+.bg-cornflower-blue {
+    background-color: --cornflower-blue;
+}
+.bg-graphite-gray {
+    background-color: --graphite-gray;
+}
+
+/* Button hovers */
+.btn-cornflower-blue:hover {
+    background-color: darken(--cornflower-blue, 10%);
+}
+.btn-outline-cornflower-blue:hover {
+    background-color: --cornflower-blue;
+    color: --white;
+}
+
+/* Text colors */
+.text-cornflower-blue {
+    color: --cornflower-blue;
+}
+.text-graphite-gray {
+    color: --graphite-gray;
+}
