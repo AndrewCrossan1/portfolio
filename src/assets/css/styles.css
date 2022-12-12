@@ -6,36 +6,56 @@
 
 /* Button colors */
 .btn-cornflower-blue {
-    background-color: --cornflower-blue;
-    color: --white;
+    background-color: var(--cornflower-blue);
+    color: var(--white);
 }
 .btn-outline-cornflower-blue {
     background-color: transparent;
-    color: --cornflower-blue;
-    border: 1px solid --cornflower-blue;
+    color: var(--cornflower-blue);
+    border: 1px solid var(--cornflower-blue);
 }
 
 /* Background colors */
 .bg-cornflower-blue {
-    background-color: --cornflower-blue;
+    background-color: var(--cornflower-blue);
 }
 .bg-graphite-gray {
-    background-color: --graphite-gray;
+    background-color: var(--graphite-gray);
 }
 
 /* Button hovers */
 .btn-cornflower-blue:hover {
-    background-color: darken(--cornflower-blue, 10%);
+    background-color: darken(var(--cornflower-blue), 10%);
 }
 .btn-outline-cornflower-blue:hover {
-    background-color: --cornflower-blue;
-    color: --white;
+    background-color: var(--cornflower-blue);
+    color: var(--white);
 }
 
 /* Text colors */
 .text-cornflower-blue {
-    color: --cornflower-blue;
+    color: var(--cornflower-blue) !important;
 }
 .text-graphite-gray {
-    color: --graphite-gray;
+    color: var(--graphite-gray);
+}
+
+/* Text sizes */
+.text-xxl {
+    font-size: 2.5rem;
+}
+.text-xl {
+    font-size: 2rem;
+}
+.text-lg {
+    font-size: 1.5rem;
+}
+.text-md {
+    font-size: 1.25rem;
+}
+.text-sm {
+    font-size: 1rem;
+}
+.text-xs {
+    font-size: 0.75rem;
 }
