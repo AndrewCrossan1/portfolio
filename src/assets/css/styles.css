@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('animations.css');
+
+* {
+    scroll-behavior: smooth;
+}
+
 :root {
     --graphite-gray: #53565b;
     --cornflower-blue: #6495ED;
@@ -37,7 +44,7 @@
     color: var(--cornflower-blue) !important;
 }
 .text-graphite-gray {
-    color: var(--graphite-gray);
+    color: var(--graphite-gray) !important;
 }
 
 /* Text sizes */
@@ -58,4 +65,78 @@
 }
 .text-xs {
     font-size: 0.75rem;
+}
+
+/* Background SVGs */
+.bg-wave-1 {
+    background-image: url('../images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vh;
+}
+.bg-wave-2 {
+    background-image: url('../images/wave-2.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+.bg-wave-3 {
+    background-image: url('../images/wave-3.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+.bg-wave-4 {
+    background-image: url('../images/wave-4.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    height: 100vh;
+}
+.bg-blob-1 {
+    background-image: url('../images/blob-1.svg');
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* Text fonts */
+.text-bebas-neue {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* Media queries for text aligning */
+/* MD */
+@media (max-width: 768px) {
+    .text-align {
+        text-align: center;
+    }
+}
+/* SM */
+@media (max-width: 576px) {
+    .text-align {
+        text-align: center;
+    }
+}
+/* LG */
+@media (max-width: 992px) {
+    .text-align {
+        text-align: center;
+    }
+}
+/* XL */
+@media (max-width: 1200px) {
+    .text-align {
+        text-align: center;
+    }
+}
+
+/* Snap sections */
+.snap-1 {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+.snap-2 {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
 }
