@@ -18,7 +18,7 @@ const routes = [
         metaTags: [
           {
             name: 'description',
-            content: 'The home page of our example app.'
+            content: 'The homepage of my portfolio'
           }
         ]
       }
