@@ -11,6 +11,7 @@ Vue.config.productionTip = false
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import './assets/css/styles.css';
+import 'animate.css/animate.min.css'
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue);
