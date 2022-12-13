@@ -10,3 +10,6 @@
 .animate-4 {
     animation-delay: 600ms;
 }
+.hover-cursor:hover {
+    cursor: pointer;
+}
