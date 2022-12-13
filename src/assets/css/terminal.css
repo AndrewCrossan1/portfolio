@@ -1,0 +1,26 @@
+.terminal-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.terminal-content p {
+    color: #4AF626;
+    overflow: hidden;
+    letter-spacing: .05em;
+    font-size: 1rem;
+}
+
+.tech-wrapper {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 1rem;
+}
