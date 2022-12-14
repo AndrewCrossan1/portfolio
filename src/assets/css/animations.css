@@ -13,3 +13,10 @@
 .hover-cursor:hover {
     cursor: pointer;
 }
+
+/* Make a media query that turns the navbar cornflower blue when the screen is on a mobile phone */
+@media screen and (max-width: 600px) {
+    .custom-nav {
+        background-color: #6495ED !important;
+    }
+}
