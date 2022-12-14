@@ -14,7 +14,7 @@ const routes = [
     meta: {
       requiresAuth: false,
       seo: {
-        title: 'Home',
+        title: 'Home | Andrew Crossan',
         metaTags: [
           {
             name: 'description',
