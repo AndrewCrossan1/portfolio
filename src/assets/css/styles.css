@@ -22,13 +22,17 @@
     color: var(--cornflower-blue);
     border: 1px solid var(--cornflower-blue);
 }
+.btn-graphite-gray {
+    background-color: var(--graphite-gray);
+    color: var(--white);
+}
 
 /* Background colors */
 .bg-cornflower-blue {
     background-color: var(--cornflower-blue);
 }
 .bg-graphite-gray {
-    background-color: var(--graphite-gray);
+    background-color: var(--graphite-gray) !important;
 }
 
 /* Button hovers */
@@ -36,6 +40,10 @@
     background-color: darken(var(--cornflower-blue), 10%);
 }
 .btn-outline-cornflower-blue:hover {
+    background-color: var(--cornflower-blue);
+    color: var(--white);
+}
+.btn-graphite-gray:hover {
     background-color: var(--cornflower-blue);
     color: var(--white);
 }
@@ -140,4 +148,27 @@
 .snap-2 {
     scroll-snap-type: y mandatory;
     scroll-snap-align: start;
+}
+
+/* Search bar */
+.search {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+/* Form Inputs */
+.search-form:focus {
+    outline: none !important;
+    border: 1px solid var(--graphite-gray) !important;
+    box-shadow: none !important;
+}
+
+.navbar {
+    box-shadow: none;
+    transition: box-shadow 0.3s linear;
+}
+
+/* Navbar scrollng */
+.navbar-scrolled {
+    box-shadow: 0 1px 10px black;
 }
