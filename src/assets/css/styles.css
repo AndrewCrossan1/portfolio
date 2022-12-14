@@ -140,16 +140,6 @@
     }
 }
 
-/* Snap sections */
-.snap-1 {
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
-}
-.snap-2 {
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
-}
-
 /* Search bar */
 .search {
     border-top-right-radius: 10px !important;
@@ -163,12 +153,41 @@
     box-shadow: none !important;
 }
 
-.navbar {
-    box-shadow: none;
-    transition: box-shadow 0.3s linear;
+/* Navbar links (Desktop First)*/
+.nav-item {
+    box-shadow: -1px 1px 3px 1px var(--graphite-gray) !important;
+    border-radius: 10px !important;
+    transition: background-color 0.3s linear;
 }
 
-/* Navbar scrollng */
-.navbar-scrolled {
-    box-shadow: 0 1px 10px black;
+.nav-item:hover {
+    box-shadow: -1px 1px 3px 1px var(--graphite-gray) !important;
+    background-color: var(--cornflower-blue) !important;
+    border-radius: 10px !important;
+}
+.nav-link {
+    transition: color 0.3s linear;
+}
+
+/* Media query for nav items */
+/* MD */
+@media (max-width: 768px) {
+    .nav-item {
+        box-shadow: none !important;
+        border-radius: none !important;
+    }
+    .nav-item:hover {
+        box-shadow: none !important;
+        background-color: transparent !important;
+        border-radius: none !important;
+    }
+    .nav-link:hover {
+        color: var(--white) !important;
+    }
+}
+/* LG and XL */
+@media (min-width: 992px) {
+    .nav-item {
+        margin: 0 0.5rem !important;
+    }
 }
