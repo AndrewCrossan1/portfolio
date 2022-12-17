@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 @import url('animations.css');
 @import url('terminal.css');
 
@@ -10,6 +11,9 @@
     --graphite-gray: #53565b;
     --cornflower-blue: #6495ED;
     --white: #fff;
+    --warning: #FFC107;
+    --danger: #DC3545;
+    --success: #28A745;
 }
 
 /* Button colors */
@@ -33,6 +37,13 @@
 }
 .bg-graphite-gray {
     background-color: var(--graphite-gray) !important;
+}
+.bg-glass {
+    background: rgba(255, 255, 255, 0.501);
+    box-shadow: 0 0px 6px 1px var(--white);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
 
 /* Button hovers */
@@ -107,11 +118,18 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+.bg-polygon {
+    background-image: url('../images/polygon.svg');
+    background-repeat: no-repeat;
+}
 
 
 /* Text fonts */
 .text-bebas-neue {
     font-family: 'Bebas Neue', cursive;
+}
+.text-montserrat {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Media queries for text aligning */
@@ -206,4 +224,57 @@
     color: var(--white);
     margin: 0;
     padding: 0;
+}
+
+/* Project Section */
+
+.project-header {
+    background-color: var(--cornflower-blue);
+    color: var(--white);
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    font-family: 'bebas neue', cursive;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+
+.project-body {
+    background-color: var(--white);
+    color: var(--cornflower-blue);
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+
+.project-footer {
+    color: var(--white);
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+
+.in-progress {
+    background-color: var(--warning);
+}
+
+.completed {
+    background-color: var(--success);
+}
+
+.not-started {
+    background-color: var(--danger);
+}
+
+.status::after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid var(--white);
+    margin-bottom: 0;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
 }
