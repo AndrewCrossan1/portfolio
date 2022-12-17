@@ -192,8 +192,43 @@
       </b-container>  
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-     <path fill="#53565b" fill-opacity="1" d="M0,128L160,256L320,160L480,160L640,288L800,224L960,32L1120,128L1280,32L1440,96L1440,0L1280,0L1120,0L960,0L800,0L640,0L480,0L320,0L160,0L0,0Z"></path>
+      <path fill="#53565b" fill-opacity="1" d="M0,160L240,32L480,192L720,128L960,320L1200,224L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z"></path>
     </svg>
+    <!-- Recent Projects -->
+    <div id="section-3" class="py-5 bg-polygon">
+      <b-container fluid class="pt-5">
+          <b-row class="justify-content-center">
+            <div class="col-md-3 mx-2 bg-white p-0">
+              <ProjectCard/>
+            </div>
+            <div class="col-md-3 mx-2 bg-white p-0">
+              This section is not finished yet, there will soon be more projects here :)
+            </div>
+            <div class="col-md-3 mx-2 bg-white p-0">
+            </div>
+          </b-row>
+          <b-row class="justify-content-center my-3">
+            <div class="col-md-3 mx-2 bg-white p-0">
+            </div>
+            <div class="col-md-3 mx-2 d-flex justify-content-center align-items-center text-center bg-glass">
+              <p class="text-bebas-neue display-1 mb-0">
+                Recent <br/>
+                <span class="text-cornflower-blue">Projects</span>
+              </p>
+            </div>
+            <div class="col-md-3 mx-2 bg-white p-0">
+            </div>
+          </b-row>
+          <b-row class="justify-content-center">
+            <div class="col-md-3 mx-2 bg-white p-0">
+            </div>
+            <div class="col-md-3 mx-2 bg-white p-0">
+            </div>
+            <div class="col-md-3 mx-2 bg-white p-0">
+            </div>
+          </b-row>
+      </b-container>
+    </div>
   </div>
 </template>
 
@@ -201,19 +236,12 @@
 export default {
   name: "HomeView",
   components: {
+    ProjectCard: () => import("../components/ProjectCard.vue"),
   },
   data() {
     return {
+
     };
   },
-  /* define methods here */
-  methods: {
-    downloadDesign: () => {
-
-    },
-    downloadProgramming: () => {
-
-    }
-  }
 };
 </script>
